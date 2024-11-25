@@ -1,0 +1,23 @@
+<input type="number" id="angka1"onkeyup="hitung()" placeholder="Angka 1"><br>
+
+<input type="number" id="angka2"onkeyup="hitung()" placeholder="Angka 2"><br>
+
+Hasil Tambah=<span id="hasil_tambah"></span><br>
+Hasil Kurang=<span id="hasil_kurang"></span><br>
+Hasil Kali=<span id="hasil_kali"></span><br>
+Hasil Bagi=<span id="hasil_bagi"></span><br>
+
+<script>
+  fuction hitung(){
+x=Number(document.getElementById("angka1").value);
+    y=Number(document.getElementById("angka2").value);
+    tambah=x+y;
+    kurang=x-y;
+    kali=x*y;
+    bagi=x/y;
+    document.getElementById("hasil_tambah").innerHTML=tambah;
+    document.getElementById("hasil_kurang").innerHTML=kurang;
+    document.getElementById("hasil_kali").innerHTML=kali;
+document.getElementById("hasil_bagi").innerHTML=bagi;
+  }
+</script>
